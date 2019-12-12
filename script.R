@@ -917,7 +917,7 @@ percent_correct_lose_weight
 
 
 z1 <- subset(x1, as.numeric(names(x1)) > 50)
-z2 <- subset(x2, as.numeric(names(x2)) > 50)
+-2 <-subset(x2, as.numeric(names(x2)) > 50)
 
 sum(z1)
 #[1] 1024
@@ -942,6 +942,8 @@ accuracy
 
 
 #spinning 3d scatterplot
+
+#with prediction by percentage
 
 library(rgl)
 
@@ -972,7 +974,7 @@ plot3d(tgd_for_plot$total_gold_difference,
        ylab = "Radiant's XP Advantage",
        zlab = "Game Outcome (1.0 = Radiant Win)",
        col=colors, 
-       main="Actual vs. Real Game Outcome by the Radiant's Gold and XP Advantages",size=3, axes=TRUE)
+       main="Actual vs. Predicted Game Outcome by the Radiant's Gold and XP Advantages",size=3, axes=TRUE)
 grid3d("z+", col = "gray", lty = 1, n = 4)
 grid3d("Z-", col = "gray", lty = 1, n = 4)
 grid3d("x+", col = "gray", lty = 1, n = 4)
@@ -982,6 +984,8 @@ legend3d("topright", legend = paste(c('Actual', 'Predicted')), pch = 16, col = c
 
 #to fix the issue with the resolution of the legend,
 #after the window displays the plot initially, make it bigger and rerun the script
+
+#drag with the mouse to view it in different angles
 
 #view 2
 
@@ -993,7 +997,7 @@ plot3d(tgd_for_plot$total_gold_difference,
        xlab = "Radiant's Gold Advantage",
        ylab = "Radiant's XP Advantage",
        zlab = "Game Outcome (1.0 = Radiant Win)",
-       col=c("#E69F00", "#999999"), 
+       col=colors, 
        size=3, axes=TRUE)
 grid3d("z+", col = "gray", lty = 1, n = 4)
 grid3d("Z-", col = "gray", lty = 1, n = 4)
@@ -1004,7 +1008,55 @@ grid3d("x-", col = "gray", lty = 1, n = 4)
 legend3d("topright", legend = paste(c('Actual', 'Predicted')), pch = 16, col = c("#E69F00", "#999999"), cex=2, inset=c(0.02))
 
 
+#with prediction by threshold
 
+#rw = radiant win
+tgd_rw <- testGameData
+tgd_rw$prob_of_winning <- NULL
+tgd_rw$radiant_win <- as.numeric(tgd_rw$radiant_win)
+tgd_rw$observation <- TRUE
+
+#pw = predicted win
+tgd_pw <- testGameData
+for (row in 1:nrow(tgd_pw)) {
+  if (tgd_pw[row,]$prob_of_winning > 50) {
+    tgd_pw[row,]$radiant_win <- 1
+  } else {
+    tgd_pw[row,]$radiant_win <- 0
+  }
+}
+tgd_pw$prob_of_winning <- NULL
+tgd_pw$observation <- FALSE
+
+tgd_for_plot2 <- rbind(tgd_rw, tgd_pw)
+
+
+
+
+library(rgl)
+
+
+par3d(cex=1.5)
+
+colors <- c("#0000FF", "#E69F00")
+colors <- colors[as.factor(tgd_for_plot2$observation)]
+head(colors)
+tail(colors)
+
+plot3d(tgd_for_plot2$total_gold_difference, 
+       tgd_for_plot2$total_xp_difference,
+       tgd_for_plot2$radiant_win,
+       xlab = "Radiant's Gold Advantage",
+       ylab = "Radiant's XP Advantage",
+       zlab = "Game Outcome (1.0 = Radiant Win)",
+       col=colors, 
+       main="Actual vs. Predicted Game Outcome by the Radiant's Gold and XP Advantages",size=3, axes=TRUE)
+grid3d("z+", col = "gray", lty = 1, n = 4)
+grid3d("Z-", col = "gray", lty = 1, n = 4)
+grid3d("x+", col = "gray", lty = 1, n = 4)
+grid3d("x-", col = "gray", lty = 1, n = 4)
+
+legend3d("topright", legend = paste(c('Actual', 'Predicted')), pch = 16, col = c("#E69F00", "#0000FF"), cex=2, inset=c(0.02))
 
 
 

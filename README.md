@@ -5,7 +5,7 @@ predict game outcome using R
 The outcome of the game
 
 ###### Predictors:  
-First analysis: team composition score difference between the two teams
+First analysis: team composition score difference between the two teams  
 Second analysis: gold and xp difference between the two teams
 
 ###### Model:

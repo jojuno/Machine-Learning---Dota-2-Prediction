@@ -1,11 +1,12 @@
 # Machine-Learning---Dota-2-Prediction
 predict game outcome using R
 
-###### Data:
-Games played online
-train_features.csv
-train_targets.csv - results of the games (win/loss)
-source: https://www.kaggle.com/c/mlcourse-dota2-win-prediction/data
+###### Data:  
+Games played online  
+First data set: "dota2Test.csv"  
+source: https://archive.ics.uci.edu/ml/datasets/Dota2+Games+Results  
+Second data set: "train_features.csv", "train_targets.csv" (results of the games), 50% sampled at random  
+source: https://www.kaggle.com/c/mlcourse-dota2-win-prediction/data  
 
 ###### Target Variable:
 The outcome of the game

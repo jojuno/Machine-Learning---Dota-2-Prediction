@@ -2,7 +2,7 @@
 predict game outcome using R
 
 ###### Data:  
-Games played online  
+Games with outcomes and stats
 First data set: "dota2Test.csv"  
 source: https://archive.ics.uci.edu/ml/datasets/Dota2+Games+Results  
 Second data set: "train_features.csv", "train_targets.csv" (results of the games), 50% sampled at random  

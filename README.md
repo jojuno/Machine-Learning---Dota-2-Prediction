@@ -5,7 +5,8 @@ predict game outcome using R
 Games with outcomes and stats  
 First data set: "dota2Test.csv"  
 source: https://archive.ics.uci.edu/ml/datasets/Dota2+Games+Results  
-Second data set: "second data set" (compressed to fit the size cap) -- "train_features.csv", "train_targets.csv" (results of the games), 50% sampled at random  
+Second data set: "second data set" (compressed to fit the size cap)  
+"train_features.csv", "train_targets.csv" (results of the games), 50% sampled at random  
 source: https://www.kaggle.com/c/mlcourse-dota2-win-prediction/data  
 
 ###### Target Variable:

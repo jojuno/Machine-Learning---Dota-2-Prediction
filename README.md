@@ -1,5 +1,10 @@
 # Machine-Learning---Dota-2-Prediction
-predict game outcome using R
+
+###### Introduction:
+This was done for the Introduction to Data Science course at UCLA Extension with Professor Daniel Gutierrez.
+
+###### Goal: 
+Predict match outcome using R
 
 ###### Data:  
 Games with outcomes and stats  

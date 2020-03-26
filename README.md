@@ -30,8 +30,8 @@ Second analysis: gold and xp difference between the two teams
 Logistic regression with multiple predictors
 
 ###### Results:  
-team composition advantage is not correlated with outcomes. the advantage could be calculated using a different method.  
-gold and xp are positively correlated with winning. the model accurately predicted 73.7% of the outcomes of games in the test data set using a 50% win / 50% loss classification. There was a high probability of winning at around 2000 gold and 2000 XP (experience) points advantage.
+Team composition advantage is not correlated with outcomes. The advantage could be calculated using a different method.  
+Gold and xp are positively correlated with winning. The model accurately predicted 73.7% of the outcomes of games in the test data set using a 50% win / 50% loss classification. There was a high probability of winning at around 2000 gold and 2000 XP (experience) points advantage.
 
 ![Image of 3D Scatter Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/Actual%20Outcome%20vs.%20Predicted%20Win%20Chance%20by%20Gold%20and%20XP%20Advantage%203D%20Scatterplot.gif)
 
@@ -41,8 +41,24 @@ gold and xp are positively correlated with winning. the model accurately predict
 
 
 ###### Part 2:
-Added 3 more predictors and used classification tree, pruning, bagging, and random forest for modeling.
+Same response variable; added 3 more predictors; used classification tree, pruning, bagging, and random forest for modeling.
 
-###### Discussion:
-Gold is the most important factor in predicting outcome.
+###### Predictors:
+Gold difference
+XP difference
+Kills difference
+Assists difference
+Rune Pick Ups difference
+
+###### Model:
+Classification Tree
+Pruning
+Bagging (p = 5)
+Random Forest (p = 2)
+
+###### Results:
+The accuracy was highest with 1 variable tried at each split, at 71.37%.
+It seems like gold is the most important factor in predicting outcome.
+
+###### Future Directions:
 Different modeling methods such as naive bayes could be tried to increase accuracy.

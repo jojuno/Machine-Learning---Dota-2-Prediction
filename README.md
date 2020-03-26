@@ -41,4 +41,8 @@ gold and xp are positively correlated with winning. the model accurately predict
 
 
 ###### Part 2:
+Added 3 more predictors and used classification tree, pruning, bagging, and random forest for modeling.
 
+###### Discussion:
+Gold is the most important factor in predicting outcome.
+Different modeling methods such as naive bayes could be tried to increase accuracy.

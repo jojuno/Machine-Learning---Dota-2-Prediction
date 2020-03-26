@@ -60,8 +60,11 @@ Random Forest (p = 2)
 The accuracy was highest with 1 variable tried at each split, at 71.37%.
 It seems like gold is the most important factor in predicting outcome.
 
+Classification Tree
 ![Image of Classification Tree](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/tree%20plot.png)
+Bar Plot
 ![Image of "Confusion" Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/predicted%20vs%20actual%20outcomes.png)
+Variable Importance Plot
 ![Image of Variable Importance Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/var%20imp%20plot.png)
 
 

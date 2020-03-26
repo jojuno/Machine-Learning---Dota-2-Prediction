@@ -1,5 +1,10 @@
 # Machine-Learning---Dota-2-Prediction
 
+
+
+###### Update 03/26/2020:
+Further analysis was done with Tree based methods. See "Part 2" below.
+
 ###### Introduction:
 This was done for the Introduction to Data Science course at UCLA Extension with Professor Daniel Gutierrez.
 
@@ -29,3 +34,11 @@ team composition advantage is not correlated with outcomes. the advantage could 
 gold and xp are positively correlated with winning. the model accurately predicted 73.7% of the outcomes of games in the test data set using a 50% win / 50% loss classification. There was a high probability of winning at around 2000 gold and 2000 XP (experience) points advantage.
 
 ![Image of 3D Scatter Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/Actual%20Outcome%20vs.%20Predicted%20Win%20Chance%20by%20Gold%20and%20XP%20Advantage%203D%20Scatterplot.gif)
+
+
+
+
+
+
+###### Part 2:
+

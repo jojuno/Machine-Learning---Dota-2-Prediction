@@ -63,7 +63,7 @@ It seems like gold is the most important factor in predicting outcome.
 Classification Tree
 ![Image of Classification Tree](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/tree%20plot.png)
 Bar Plot
-![Image of "Confusion" Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/predicted%20vs%20actual%20outcomes.png)
+![Image of "Results" Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/predicted%20outcome%20vs.%20actual%20outcome.png)
 Variable Importance Plot
 ![Image of Variable Importance Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/variable%20importance%20plot.png)
 

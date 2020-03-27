@@ -65,7 +65,7 @@ Classification Tree
 Bar Plot
 ![Image of "Confusion" Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/predicted%20vs%20actual%20outcomes.png)
 Variable Importance Plot
-![Image of Variable Importance Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/var%20imp%20plot.png)
+![Image of Variable Importance Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/variable%20importance%20plot.png)
 
 
 ###### Future Directions:

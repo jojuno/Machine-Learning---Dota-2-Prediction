@@ -61,7 +61,7 @@ The accuracy was highest with 1 variable tried at each split, at 71.37%.
 It seems like gold is the most important factor in predicting outcome.
 
 
-![Image of Classification Tree](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/tree%20plot.png)
+![Image of Classification Tree](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/classification%20tree%20plot.png)
 
 ![Image of "Results" Plot](https://github.com/jojuno/Machine-Learning---Dota-2-Prediction/blob/master/predicted%20outcome%20vs.%20actual%20outcome.png)
 
